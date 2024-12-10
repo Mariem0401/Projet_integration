@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Rediriger selon le type d'utilisateur
             if ($row['user_type'] === 'admin') {
-                header("Location: admin_dashboard.php"); // Page tableau de bord admin
+                header("Location: page.php"); // Page tableau de bord admin
             } else {
                 header("Location: user_dashboard.php"); // Page tableau de bord utilisateur classique
             }
